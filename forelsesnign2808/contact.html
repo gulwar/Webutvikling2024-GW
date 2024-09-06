@@ -7,8 +7,8 @@
     </head>
     <body>
         <header>
-            <a href="index.html"><h1>TV</h1</a>
-            <nav> 
+            <a href="index.html"><h1>Tv</h1>
+            <nav>
                 <ul>
                     <li>
                         <a href="index.html">Hjem</a>
@@ -17,7 +17,7 @@
                         <a href="https://www.youtube.com/" target="blank">Youtube</a>
                     </li>
                     <li>
-                        <a href="index.html">Tilbake til moren din</a>
+                        <a href="index.html">Tilbake til hovedsiden</a>
                     </li>
                     <li>
                         <a href="contact.html"> Kontakt oss</a>
@@ -32,8 +32,49 @@
             <section>
                 <h2>Kontankt oss</h2>
             </section>
+            <section>
+                <h2>Ta kontakt med oss idag</h2>
+                <form method="post" action=>
+                    <label for="navn"> Navn:</label>
+                    <input type="text" name="navn" placeholder="Nora Nordmann.." id="navn" maxlength="30" required>
+                    <label>
+                        E-post:
+                        <input type="mail" name="email" placeholder="eksempel@hiof.no" maxlength="45" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                    </label>
+                    <label>
+                        Emne
+                        <input type="text" name="emne" placeholder="Hva handler det om" maxlength="35">
+                    </label>
+                    <label>
+                        Melding:
+                        <textarea name="melding" required></textarea>
+                    </label>
+                    <input type="submit" value="Send melding">
+                    <label>
+                        nei
+                        <input type="radio" name="valg">
+                    </label>
+                    <label>
+                        ja
+                        <input type="radio" name="valg">
+                    </label>
+                    <label>
+                        kanskje
+                        <input type="radio" name="Valg">
+                    </label>
+                    <label>
+                        favoritt mat
+                            <select name="fav">
+                                <options value="Pizza">Pizza</options>
+                                <options value="Burger">Burger</options>    
+                                <options value="Kebab">Kebab</options>
+                            </select>
+                            
+                            <input type="submit" value="send melding">
+                    </label>
+                </form>
+            </section>
         </main>
         <footer> 2024 Guled Warsame</footer>
     </body>
-
 </html>
