@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nb">
+<meta charset="UTF-8">
+<head>
+    <title>KontaktSkjema</title>
+</head>
+<body>
+    <header>
+        <h1>Ta kontakt med oss idag</h1>
+        <li>
+            <a href="oppskrift.html">Oppskrift til retten</a>
+        </li>
+        <li>
+            <a href="studeiplan.html">Studieplan</a>
+        </li>
+    </header>
+</body>
+<main>
+    <section>
+        <h2>Kontaktskjema</h2>
+    </section>
+    <section>
+        <nav>
+            <ul>
+                <li>
+        <form method="post" action=>
+            <label for="navn"> Navn:</label>
+            <input type="text" name="navn" placeholder="Nora Nordmann.." id="navn"  minlength="2" maxlength="30" required>
+        </li>
+        <li>
+            <label>
+                E-post:
+                <input type="email" required name="email" placeholder="eksempel@hiof.no" maxlength="45" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+            </label>
+        </li>
+        <li>
+            <label>
+                Passord:
+                <input type="navn"placeholder="Nora Nordmann.." id="navn" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            </label>
+        </li>
+        <li>
+            <label>
+                Fødselsdato:
+                <input type="date" max="2023-12-31" required>
+            </label>
+        </li>
+        <li>
+            <label>
+                Telefonnummer:
+                <input type="number" minlength="8" maxlength="12">
+            </label>
+        </li>    
+        <li>
+            <label>
+                Alder:
+                <input type="number" min="18" maxlength="99">
+            </label>
+        </li>
+        <label>
+            Mann
+            <input type="radio" name="valg">
+            <!-- Radio-knapp for valg. 
+                 - 'type="radio"' gir en knapp som lar brukeren velge ett alternativ.
+                 - 'name="valg"' grupperer alle radio-knappene sammen slik at bare én kan velges. -->
+        </label>
+        <label>
+            Kvinne
+            <input type="radio" name="valg">
+            <!-- Radio-knapp for et annet valg med samme gruppe. -->
+        </label>
+
+        <label>
+            Annet
+            <input type="radio" name="valg">
+            <!-- Ytterligere radio-knapp i samme gruppe for valg. -->
+        </label>
+        <li>
+        <label>
+            Land
+            <select name="fav">
+                <!-- Nedtrekksmeny for å velge et alternativ.
+                     - 'name="fav"' sender valgt verdi som 'fav' til serveren. -->
+                <option value="Norge">Norge</option>
+                <!-- Valg i nedtrekksmenyen. 'value="Pizza"' er verdien som sendes hvis valgt. -->
+                <option value="Sverige">Sverige</option>
+                <!-- Et annet alternativ i nedtrekksmenyen. -->
+                <option value="Danmark">Danmark</option>
+                <!-- Et siste alternativ. -->
+            </select>
+        </li>
+    </label>
+        <li>
+            <label>
+                Peronvern:
+                <input type="submit" value="Avkrysningsboks"> 
+            </label>
+        </li>
+        <li>
+            <label>
+                Submit:
+                <input type="submit" value="Submit">
+            </label>
+        </li>
+         </ul>   
+        </nav>
+    </section>
+</main>
