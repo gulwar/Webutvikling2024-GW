@@ -1,0 +1,27 @@
+main{
+    background-image: utl{"../"};
+    background-size: contain;
+    height: 500px;
+    max-height: 1200px
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+#supermario{
+    background-image: url();
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+
+}
+
+#gompa{
+    background-image: url();
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+
+}
